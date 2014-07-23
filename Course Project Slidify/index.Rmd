@@ -1,0 +1,30 @@
+---
+title       : Developing Data Products Course Project
+subtitle    : Area Calculator
+author      : Andrew Hwang
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Area Calculator
+
+The Shiny application created for the course project calculates the area of a user-chosen shape and user-specified dimensions.
+
+The application dynamically changes as the user changes the input of the various fields.
+
+--- .class #id 
+
+## How to Use the Calculator
+
+Upon opening the application, the user will see that the default values are that the shape is square and the length is 0, thus giving an area of 0.
+
+To change the shape, the user must click on the drop-down menu and choose the desired shape. The possible choices are square, rectangle, triangle, circle, and parallelogram.
+
+
+
+

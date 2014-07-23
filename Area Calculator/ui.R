@@ -13,8 +13,16 @@ shinyUI(fluidPage(
                                      "circle",
                                      "parallelogram"),
                         selected="square"),
-            textInput("length", label=h3("Length/Radius"),
-                      value = 0),
+            conditionalPanel(
+                condition = "input.var != 'circle'",
+                textInput("length", label=h3("Length"),
+                          value = 0)
+            ),
+            conditionalPanel(
+                condition = "input.var == 'circle'",
+                textInput("radius", label=h3("Radius"),
+                          value = 0)
+            ),
             conditionalPanel(
                 condition = "input.var == 'rectangle' |
                             input.var == 'triangle' |

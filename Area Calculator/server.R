@@ -14,7 +14,7 @@ shinyServer(
                 area <- (as.numeric(input$length)*as.numeric(input$width))/2
             }
             if (input$var == "circle") {
-                area <- pi*(as.numeric(input$length))^2
+                area <- pi*(as.numeric(input$radius))^2
             }
             paste("The area is", area)
         })
