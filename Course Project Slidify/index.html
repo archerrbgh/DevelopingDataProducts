@@ -48,16 +48,69 @@
   <article data-timings="">
     <p>The Shiny application created for the course project calculates the area of a user-chosen shape and user-specified dimensions.</p>
 
+<p>The application dynamically changes as the user changes the input of the various fields.</p>
+
+<p>This application allows user to quickly calculate the area of a square, rectangle, triangle, circle, or parallelogram.</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>How to Use the Calculator</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>Upon opening the application, the user will see that the default values are that the shape is square and the length is 0, thus giving an area of 0.</p>
+
+<p>To change the shape, the user must click on the drop-down menu and choose the desired shape. The possible choices are square, rectangle, triangle, circle, and parallelogram.</p>
+
+<p>Upon making a choice of shape, take note that the choice is automatically reflected on the right panel. Furthermore, the input boxes below the drop-down menu may have also changed depending on the selection.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to Use the Calculator (cont.)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Next, enter the desired value(s) for the shape. If the shape chosen is a circle or square, there is only one value to enter (radius and length respectively). The other shapes require two values (length and width).</p>
+
+<p>Upon entering values, the area is automatically calculated and displayed on the right panel, just below the message displaying what shape the user chose.</p>
+
+<p>To do another calculation, simply choose the desired shape and input the desired values again. There is no need to restart the application.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Examples</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here are some example inputs and their expected outputs.</p>
+
+<p>If we want to find the area of a circle with radius 2.5, the area is calculated as follows:</p>
+
+<pre><code class="r">radius &lt;- 2.5
+pi*radius^2
+</code></pre>
+
+<pre><code>## [1] 19.63
+</code></pre>
+
+<p>A triangle with height 7 and width 4 has area:</p>
+
+<pre><code class="r">length &lt;- 7; width &lt;- 4
+(length*width)/2
+</code></pre>
+
+<pre><code>## [1] 14
+</code></pre>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -74,8 +127,20 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='How to Use the Calculator'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How to Use the Calculator (cont.)'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Examples'>
+         4
       </a>
     </li>
   </ul>

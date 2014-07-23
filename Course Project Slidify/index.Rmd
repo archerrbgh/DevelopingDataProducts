@@ -17,6 +17,8 @@ The Shiny application created for the course project calculates the area of a us
 
 The application dynamically changes as the user changes the input of the various fields.
 
+This application allows user to quickly calculate the area of a square, rectangle, triangle, circle, or parallelogram.
+
 --- .class #id 
 
 ## How to Use the Calculator
@@ -25,6 +27,32 @@ Upon opening the application, the user will see that the default values are that
 
 To change the shape, the user must click on the drop-down menu and choose the desired shape. The possible choices are square, rectangle, triangle, circle, and parallelogram.
 
+Upon making a choice of shape, take note that the choice is automatically reflected on the right panel. Furthermore, the input boxes below the drop-down menu may have also changed depending on the selection.
 
+--- .class #id
 
+## How to Use the Calculator (cont.)
 
+Next, enter the desired value(s) for the shape. If the shape chosen is a circle or square, there is only one value to enter (radius and length respectively). The other shapes require two values (length and width).
+
+Upon entering values, the area is automatically calculated and displayed on the right panel, just below the message displaying what shape the user chose.
+
+To do another calculation, simply choose the desired shape and input the desired values again. There is no need to restart the application.
+
+--- .class #id
+
+## Examples
+
+Here are some example inputs and their expected outputs.
+
+If we want to find the area of a circle with radius 2.5, the area is calculated as follows:
+```{r}
+radius <- 2.5
+pi*radius^2
+```
+
+A triangle with height 7 and width 4 has area:
+```{r}
+length <- 7; width <- 4
+(length*width)/2
+```
